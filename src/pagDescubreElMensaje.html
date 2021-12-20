@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi diario secreto</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-      <audio controls autoplay loop>
-        <source src="audio/y2meta.com - The Sims Makin Magic Soundtrack (128 kbps).mp3" type="audio/mpeg">
-      </audio>
-        <img src="img/web-pascualina-originals.ico" alt="logo" />
-      <h1>Tu diario secreto</h1>
+     
+        <h1>Tu diario secreto</h1>
+     
       </header>
       <nav>
          <button><a href="pagDiarioSecreto.html">Diario secreto</a></button>
@@ -20,7 +17,11 @@
         
          
   </nav>
+
   <br>
+<article>
+<section>
+<form>
     <h2><label>Descubre el mensaje</label></h2>
   
   <p>    ¿Quieres conocer el contenido del mensaje secreto que te entregaron?
@@ -29,24 +30,29 @@
     
     <h3>Elige el N° secreto que tu amix te dio</h3>
   
-    <p><input type="number" placeholder="N° Secreto" id="displacement" size="4" style="width : 200px";/></p>
+    <p><input type="number" placeholder="N° Secreto" id="displacement" size="4" style="width : 200px" min="0" max="33"/></p>
 
 <p><p><label>Texto cifrado</label>
   <br>
-  <textarea id="inputText" name="cuadroDeTexto" rows="4" cols="50" placeholder="Escribe aquí">
+  <textarea id="inputText" name="cuadroDeTexto" rows="10" cols="70" placeholder="Escribe aquí">
 </textarea></p>
 
-<button type= "button" id="code">¡Descifrar el mensaje!</button>
+<button type= "button" id="coded">¡Hazlo secreto!</button>
+
 <br>
 
 <p><label>Tu texto rebelado</label>
   <br>
-  <textarea id="textOutput" name="textOutput" rows="4" cols="50" readonly >
+  <textarea id="textOutput" name="textOutput" rows="10" cols="70" readonly >
   </textarea>
 </form>
 </section>
-
+<br>
+<audio controls autoplay >
+  <source src="audio/X2Download.com - Porcelain (Moby) Instrumental Music (128 kbps).mp3" type="audio/mpeg">
+</audio>
 </article>
-    
+<script src="index.js" type="module"></script>
 </body>
+
 </html>
